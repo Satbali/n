@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+
+    <!-- Mobile & rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO basics -->
+    <meta name="description" content="Short description of this page." />
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Social (Open Graph / Twitter) -->
+    <meta property="og:title" content="Page Title" />
+    <meta property="og:description" content="Short description of this page." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Example font (optional) -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Prefer color scheme -->
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- JS (defer so it doesn't block rendering) -->
+    <script defer src="/app.js"></script>
+</head>
+
+<body>
+    <header role="banner">
+        <nav aria-label="Primary">
+            <a href="/" class="logo">Brand</a>
+            <ul>
+                <li><a href="#content">Skip to content</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" role="main">
+        <h1>Hello, world!</h1>
+        <p>Your content starts here.</p>
+    </main>
+
+    <footer role="contentinfo">
+        <small>&copy; <span id="year"></span> Your Name</small>
+    </footer>
+
+    <noscript>This site works best with JavaScript enabled.</noscript>
+
+    <script>
+        // Small inline helper example
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
